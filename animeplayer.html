@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Watch Anime in highest quality</title>
+        <link rel = "stylesheet" href = "css/forplayer.css">
+        <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+        <link rel = "icon" href = "images/android-chrome-192x192.png" type = "image/x-icon">
+        <link rel = "icon" href = "images/apple-touch-icon.png" type = "image/x-icon">
+    </head>
+    <body>
+        <div id = "dat">
+            <h2 id = "tit"></h2>
+            <iframe id = "vid" allowfullscreen = "true" frameborder = "0" marginwidth = "0" marginheight = "0" scrolling = "no"></iframe>
+            <button id = "save" onclick = "save()"></button>
+            <textarea id = "notes"></textarea>
+        </div>
+        <div id = "episodes">
+        </div>
+        <div id = "chat">
+            <iframe id="my_iframe" class="chatroom" src="https://www6.cbox.ws/box/?boxid=848705&amp;boxtag=jPIIfT" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+        </div>
+        <script>
+            function change(episode)
+            {
+                perform1(episode);
+            }
+            function save()
+            {
+                perform2();
+            }
+        </script>
+        <script src = "js/videoscraper.js"></script>
+    </body>
+</html>

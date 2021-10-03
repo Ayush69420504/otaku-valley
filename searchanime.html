@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Search for Anime</title>
+        <link rel = "stylesheet" href = "css/forsearch.css">
+        <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+        <link rel = "icon" href = "images/android-chrome-192x192.png" type = "image/x-icon">
+        <link rel = "icon" href = "images/apple-touch-icon.png" type = "image/x-icon">
+    </head>
+    <body>
+        <div id = "srcbx">
+            <input type = "text" id = "input">
+            <button onclick = "search()">Search</button>
+        </div>
+        <div id = "results"></div>
+        <script>
+            function search()
+            {
+                perform1(document.getElementById("input").value);
+            }
+            function datpass(txt)
+            {
+                perform2(txt);
+            }
+        </script>
+        <script src = "js/animesearchscraper.js"></script>
+    </body>
+</html>

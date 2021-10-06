@@ -5,7 +5,6 @@ function perform1(name)
     const xhttp = new XMLHttpRequest();
     xhttp.onload = function()
     {
-        console.log("Success in connecting with https://streamani.net The requested functions are being performed [SEARCH]");
         const doc = xhttp.responseXML;
         document.getElementById("results").innerHTML = "";
         if (doc.getElementsByClassName("video-block").length == 0)

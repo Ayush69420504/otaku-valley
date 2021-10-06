@@ -8,7 +8,7 @@ for (i = window.location.href.length - 1; i >= 0; i--)
 }
 if (isproper == false)
 {
-    alert("Accessed video player with no play data, redirecting to Search");
+    alert("Accessed Video Player with no play data, redirecting to Search");
     window.location.replace("searchanime.html");
 }
 else

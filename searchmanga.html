@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Search for Manga</title>
+        <link rel = "stylesheet" href = "css/forsearch.css">
+        <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
+        <link rel = "icon" href = "images/android-chrome-192x192.png" type = "image/x-icon">
+        <link rel = "icon" href = "images/apple-touch-icon.png" type = "image/x-icon">
+    </head>
+    <body>
+        <div id = "srcbx">
+            <input type = "text" id = "input"></input>
+            <button onclick = "searchmanga()">Search</button>
+        </div>
+        <div id = "results"></div>
+        <script>
+            function searchmanga()
+            {
+                perform1();
+            }
+            function viewmanga(link)
+            {
+                perform2(link);
+            }
+        </script>
+        <script src = "js/mangasearchscraper.js"></script>
+    </body>
+</html>
